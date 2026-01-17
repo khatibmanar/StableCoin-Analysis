@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# API keys / secrets
+.env
+
+# Data files
+data/*.csv
+
+# Python cache
+__pycache__/
+*.pyc

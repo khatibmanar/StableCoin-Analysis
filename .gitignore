@@ -1,12 +1,39 @@
-# Virtual environment
-.venv/
+# System / OS files
+# =========================
+.DS_Store
 
-# API keys / secrets
+
+
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+.venv/
+env/
+ENV/
+
+
+
+# Environment variables
+# =========================
 .env
 
-# Data files
-data/*.csv
 
-# Python cache
-__pycache__/
-*.pyc
+
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+
+
+# Exploratory / archived notebooks (not public)
+# =========================
+notebooks/usdc_analysis.ipynb
+notebooks/usdc_eth_analysis.ipynb
+notebooks/usdc_eth_180d_analysis.ipynb
+
+
+
+# Temporary / experimental scripts
+# =========================
+*_fail.py

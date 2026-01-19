@@ -15,7 +15,16 @@ from datetime import datetime, timedelta, timezone
 # -----------------------------
 # Configuration
 # -----------------------------
-ETHERSCAN_API_KEY = "API_KEY_HIDDEN"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # reads .env file
+
+ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY")
+
+if not ETHERSCAN_API_KEY:
+    raise ValueError("ETHERSCAN_API_KEY not set")
+
 BASE_URL = "https://api.etherscan.io/v2/api"
 USDC_CONTRACT = "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
 

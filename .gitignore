@@ -37,3 +37,10 @@ notebooks/usdc_eth_180d_analysis.ipynb
 # Temporary / experimental scripts
 # =========================
 *_fail.py
+
+
+# Ignore all data files
+data/*
+
+# Keep directory structure
+!data/.gitkeep
